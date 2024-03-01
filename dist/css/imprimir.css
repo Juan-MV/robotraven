@@ -1,0 +1,18 @@
+/* Media query para imprimir */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    /* Div para imprimir */
+    #printableDiv,
+    #printableDiv * {
+        visibility: visible;
+    }
+
+    #printableDiv {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
