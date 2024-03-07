@@ -258,19 +258,83 @@
                         <div class="col-sm-8 form-group">
                           <label>Carrera</label>
                           <div class="dropdown">
-                            <button class="btn btn-success dropdown-toggle w-100" type="button" id="dropdownMenuButtonCarrera" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button
+                              class="btn btn-success dropdown-toggle w-100"
+                              type="button"
+                              id="dropdownMenuButtonCarrera"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
                               Seleccionar Carrera
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonCarrera">
-                              <li class="dropdown-item" role="button" onclick="updateButtonCarrera(this.innerText)">Ingeniería en Desarrollo de Software</li>
-                              <li class="dropdown-item" role="button" onclick="updateButtonCarrera(this.innerText)">Ingeniería Industrial</li>
-                              <li class="dropdown-item" role="button" onclick="updateButtonCarrera(this.innerText)">Ingeniería Multimedia</li>                              
-                              <li class="dropdown-item" role="button" onclick="updateButtonCarrera(this.innerText)">Licenciatura en Psicología</li>
-                              <li class="dropdown-item" role="button" onclick="updateButtonCarrera(this.innerText)">Licenciatura en Contaduría Pública</li>
-                              <li class="dropdown-item" role="button" onclick="updateButtonCarrera(this.innerText)">Licenciatura en Aduanas y Logística </li>
-                              <li class="dropdown-item" role="button" onclick="updateButtonCarrera(this.innerText)">Licenciatura en Administración de Empresas</li>
-                              <li class="dropdown-item" role="button" onclick="updateButtonCarrera(this.innerText)">Licenciatura en Derecho</li>
-                              <li class="dropdown-item" role="button" onclick="updateButtonCarrera(this.innerText)">Licenciatura en Negocios Internacionales</li>
+                            <ul
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButtonCarrera"
+                            >
+                              <li
+                                class="dropdown-item"
+                                role="button"
+                                onclick="updateButtonCarrera(this.innerText)"
+                              >
+                                Ingeniería en Desarrollo de Software
+                              </li>
+                              <li
+                                class="dropdown-item"
+                                role="button"
+                                onclick="updateButtonCarrera(this.innerText)"
+                              >
+                                Ingeniería Industrial
+                              </li>
+                              <li
+                                class="dropdown-item"
+                                role="button"
+                                onclick="updateButtonCarrera(this.innerText)"
+                              >
+                                Ingeniería Multimedia
+                              </li>
+                              <li
+                                class="dropdown-item"
+                                role="button"
+                                onclick="updateButtonCarrera(this.innerText)"
+                              >
+                                Licenciatura en Psicología
+                              </li>
+                              <li
+                                class="dropdown-item"
+                                role="button"
+                                onclick="updateButtonCarrera(this.innerText)"
+                              >
+                                Licenciatura en Contaduría Pública
+                              </li>
+                              <li
+                                class="dropdown-item"
+                                role="button"
+                                onclick="updateButtonCarrera(this.innerText)"
+                              >
+                                Licenciatura en Aduanas y Logística
+                              </li>
+                              <li
+                                class="dropdown-item"
+                                role="button"
+                                onclick="updateButtonCarrera(this.innerText)"
+                              >
+                                Licenciatura en Administración de Empresas
+                              </li>
+                              <li
+                                class="dropdown-item"
+                                role="button"
+                                onclick="updateButtonCarrera(this.innerText)"
+                              >
+                                Licenciatura en Derecho
+                              </li>
+                              <li
+                                class="dropdown-item"
+                                role="button"
+                                onclick="updateButtonCarrera(this.innerText)"
+                              >
+                                Licenciatura en Negocios Internacionales
+                              </li>
                             </ul>
                           </div>
                         </div>
@@ -287,13 +351,41 @@
                         <div class="col-sm-8 form-group">
                           <label>Modalidad</label>
                           <div class="dropdown">
-                            <button class="btn btn-success dropdown-toggle w-100" type="button" id="dropdownMenuButtonModalidad" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button
+                              class="btn btn-success dropdown-toggle w-100"
+                              type="button"
+                              id="dropdownMenuButtonModalidad"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
                               Seleccionar Modalidad
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonModalidad">
-                              <li class="dropdown-item" role="button" onclick="updateButtonModalidad(this.innerText)">Escolarizada</li>
-                              <li class="dropdown-item" role="button" onclick="updateButtonModalidad(this.innerText)">Semipresencial</li>
-                              <li class="dropdown-item" role="button" onclick="updateButtonModalidad(this.innerText)">Ejecutiva</li>
+                            <ul
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButtonModalidad"
+                            >
+                              <li
+                                class="dropdown-item"
+                                role="button"
+                                onclick="updateButtonModalidad(this.innerText)"
+                              >
+                                Escolarizada
+                              </li>
+                              <li
+                                class="dropdown-item"
+                                role="button"
+                                onclick="updateButtonModalidad(this.innerText)"
+                              >
+                                Semipresencial
+                              </li>
+                              <li
+                                class="dropdown-item"
+                                role="button"
+                                onclick="updateButtonModalidad(this.innerText)"
+                              >
+                                Ejecutiva
+                              </li>
                             </ul>
                           </div>
                         </div>
@@ -345,6 +437,7 @@
                       <button type="button" class="btn btn-primary">
                         Registrar
                       </button>
+                    </div>
                   </form>
                 </div>
               </div>
@@ -409,10 +502,11 @@
     <!-- Actualizar dropdown carrera cuando se seleccione una -->
     <script>
       function updateButtonCarrera(option) {
-        document.getElementById('dropdownMenuButtonCarrera').innerText = option;
+        document.getElementById("dropdownMenuButtonCarrera").innerText = option;
       }
       function updateButtonModalidad(option) {
-        document.getElementById('dropdownMenuButtonModalidad').innerText = option;
+        document.getElementById("dropdownMenuButtonModalidad").innerText =
+          option;
       }
     </script>
   </body>

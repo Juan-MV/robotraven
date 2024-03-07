@@ -50,8 +50,499 @@
     <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css" />
   </head>
   <body class="hold-transition sidebar-mini layout-fixed">
-    <!-- ./wrapper -->
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"
+              ><i class="fas fa-bars"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.navbar -->
 
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-light-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-link">
+          <img
+            src="dist/img/logo.png"
+            alt="CESUN Logo"
+            class="brand-image"
+            style="opacity: 0.8"
+          />
+          <span class="brand-text font-weight-light">Vinculación</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Sidebar user panel (optional) -->
+          <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="info">
+              <a href="#" class="d-block">*Usuario: Nombre y Apellido*</a>
+            </div>
+          </div>
+
+          <!-- SidebarSearch Form -->
+          <div class="form-inline">
+            <div class="input-group" data-widget="sidebar-search">
+              <input
+                class="form-control form-control-sidebar"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-sidebar">
+                  <i class="fas fa-search fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul
+              class="nav nav-pills nav-sidebar flex-column"
+              data-widget="treeview"
+              role="menu"
+              data-accordion="false"
+            >
+              <!--Menu Item Start-->
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                  <ion-icon class="nav-icon" name="home-outline"></ion-icon>
+                  <p>Principal</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="reportes.html" class="nav-link">
+                  <ion-icon
+                    class="nav-icon"
+                    name="document-text-outline"
+                  ></ion-icon>
+                  <p>Reportes</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="registro-alumnos.html" class="nav-link">
+                  <ion-icon
+                    class="nav-icon"
+                    name="person-add-outline"
+                  ></ion-icon>
+                  <p>Registro de alumnos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="servicio-comunitario.html" class="nav-link">
+                  <ion-icon class="nav-icon" name="gift-outline"></ion-icon>
+                  <p>Servicio comunitario</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="servicio-social.html" class="nav-link">
+                  <ion-icon
+                    class="nav-icon"
+                    name="briefcase-outline"
+                  ></ion-icon>
+                  <p>Servicio social</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="practica-profesional.html" class="nav-link">
+                  <ion-icon class="nav-icon" name="cafe-outline"></ion-icon>
+                  <p>Practica Profesional</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="horas-terapeutica.html" class="nav-link">
+                  <ion-icon
+                    class="nav-icon"
+                    name="chatbubble-ellipses-outline"
+                  ></ion-icon>
+                  <p>Horas Terapéutica</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="toefl.html" class="nav-link">
+                  <ion-icon class="nav-icon" name="language-outline"></ion-icon>
+                  <p>TOEFL</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="opciones-titulacion.html" class="nav-link">
+                  <ion-icon class="nav-icon" name="trophy-outline"></ion-icon>
+                  <p>Opciones de Titulación</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="unidades-receptoras.html" class="nav-link">
+                  <ion-icon
+                    class="nav-icon"
+                    name="add-circle-outline"
+                  ></ion-icon>
+                  <p>Unidades receptoras</p>
+                </a>
+              </li>
+              <!--Menu Items End-->
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h1 class="m-0">Opciones de Titulación</h1>
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+        <!-- Main content -->
+        <section class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <!--Registration form Start-->
+              <div class="col-lg-12 well d-flex justify-content-center">
+                <div class="row">
+                  <!--FORM  init -->
+                  <form>
+                    <div class="col-sm-12">
+                      <div class="row">
+                        <div class="col-sm-1">
+                          <img
+                            class="brand-image"
+                            src="dist/img/logo.png"
+                            style="max-width: 66px; height: auto"
+                          />
+                        </div>
+                        <div class="col-sm-11">
+                          <div class="row">
+                            <div class="col text-center">
+                              Dirección Académica
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col text-center">
+                              Coordinación de Control Escolar
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col text-center">
+                              <strong
+                                >Registro de opción para Titulación
+                              </strong>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div
+                          class="col-sm-12 form-group text-right"
+                          id="current-date"
+                        ></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 form-group">
+                          <label>Programa académico cursado:</label>
+                          <input
+                            type="text"
+                            placeholder=""
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 form-group">
+                          <label>Nombre del Egresado:</label>
+                          <input
+                            type="text"
+                            placeholder=""
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-8 form-group">
+                          <label>Teléfono (s):</label>
+                          <input
+                            type="text"
+                            placeholder=""
+                            class="form-control"
+                          />
+                        </div>
+                        <div class="col-sm-4 form-group">
+                          <label>Promedio General:</label>
+                          <input
+                            type="text"
+                            placeholder=""
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 form-group">
+                          <label>Correo Electrónico</label>
+                          <input
+                            type="text"
+                            placeholder=""
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 form-group text-left">
+                          <label>Selecciona la opción de titulación</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 form-group ml-5">
+                          <input
+                            type="radio"
+                            id="opt1"
+                            name="options"
+                            class="form-check-input"
+                          />
+                          <label
+                            >Certificaciones de Competencias Laborales**</label
+                          >
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 form-group ml-5">
+                          <input
+                            type="radio"
+                            id="opt2"
+                            name="options"
+                            class="form-check-input"
+                          />
+                          <label>Dos Prácticas Profesionales</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 form-group ml-5">
+                          <input
+                            type="radio"
+                            id="opt3"
+                            name="options"
+                            class="form-check-input"
+                          />
+                          <label>Dos Seminarios</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 form-group ml-5">
+                          <input
+                            type="radio"
+                            id="opt4"
+                            name="options"
+                            class="form-check-input"
+                          />
+                          <label>Examen General de Egreso (CENEVAL)</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 form-group ml-5">
+                          <input
+                            type="radio"
+                            id="opt5"
+                            name="options"
+                            class="form-check-input"
+                          />
+                          <label>Experiencia Profesional</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 form-group ml-5">
+                          <input
+                            type="radio"
+                            id="opt6"
+                            name="options"
+                            class="form-check-input"
+                          />
+                          <label>Promedio</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 form-group ml-5">
+                          <input
+                            type="radio"
+                            id="opt7"
+                            name="options"
+                            class="form-check-input"
+                          />
+                          <label>Promedio de Excelencia Académica</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 form-group ml-5">
+                          <input
+                            type="radio"
+                            id="opt8"
+                            name="options"
+                            class="form-check-input"
+                          />
+                          <label>Taller de investigación*</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-11 form-group ml-5">
+                          <input
+                            type="radio"
+                            id="opt9"
+                            name="options"
+                            class="form-check-input"
+                          />
+                          <label>Diplomado para Titulación:</label>
+                          <input
+                            type="text"
+                            placeholder=""
+                            class="form-control"
+                            id="diplomado"
+                          />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-11 form-group ml-5">
+                          <input
+                            type="radio"
+                            id="opt10"
+                            name="options"
+                            class="form-check-input"
+                          />
+                          <label
+                            >Superación Académica (<i
+                              >registra el tema del curso, taller o maestria a
+                              cursar</i
+                            >):</label
+                          >
+                          <input
+                            type="text"
+                            placeholder=""
+                            class="form-control"
+                            id="superacion-academicaopt"
+                          />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-11 form-group ml-5">
+                          <input
+                            type="radio"
+                            id="opt11"
+                            name="options"
+                            class="form-check-input"
+                          />
+                          <label>Tesis:</label>
+                          <input
+                            type="text"
+                            placeholder=""
+                            class="form-control"
+                            id="tesis"
+                          />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 form-group text-left">
+                          <i>*Reglamento 2016 **Reglamento 2021</i>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 form-group text-center">
+                          <label>Registro de Asesores</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 form-group">
+                          <label>Nombre del Director de Contenido:</label>
+                          <input
+                            type="text"
+                            placeholder=""
+                            class="form-control"
+                            id="nombre-director-contenido"
+                          />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 form-group text-center">
+                          <label>Asignación de sinodales</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 form-group">
+                          <label>Nombre del Presidente:</label>
+                          <input
+                            type="text"
+                            placeholder=""
+                            class="form-control"
+                            id="nombre-presidente"
+                          />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 form-group">
+                          <label>Nombre del Secretario:</label>
+                          <input
+                            type="text"
+                            placeholder=""
+                            class="form-control"
+                            id="nombre-secretario"
+                          />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 form-group">
+                          <label>Nombre del Vocal:</label>
+                          <input
+                            type="text"
+                            placeholder=""
+                            class="form-control"
+                            id="nombre-vocal"
+                          />
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-primary m-4">
+                        Registrar
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!--Registration form End-->
+            </div>
+            <!-- /.row (main row) -->
+          </div>
+          <!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+      </div>
+      <!-- /.content-wrapper -->
+      <footer class="main-footer" style="font-size: xx-small">
+        Copyright &copy; 2014-2021
+        <a href="https://adminlte.io">AdminLTE.io</a>. All rights reserved.
+        <div class="float-right d-none d-sm-inline-block">
+          <b>Version</b> 3.2.0
+        </div>
+      </footer>
+
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+      </aside>
+      <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
@@ -88,6 +579,16 @@
     <script src="dist/js/pages/dashboard.js"></script>
     <!-- Actualizar dropdown carrera cuando se seleccione una -->
     <script>
+      // Agrega comentario y fecha en formulario
+      /*
+      const currentDate = new Date();
+      const day = currentDate.getDate();
+      const month = currentDate.toLocaleDateString("es-MX", { month: "long" });
+      const year = currentDate.getFullYear();
+      const locationString = "Tijuana, Baja California";
+      const outputString = `${locationString}; a ${day} de ${month} del ${year}`;
+      document.getElementById("current-date").innerText = outputString;
+      */
       function updateButtonCarrera(option) {
         document.getElementById("dropdownMenuButtonCarrera").innerText = option;
       }
