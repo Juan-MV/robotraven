@@ -217,6 +217,7 @@
               <!--Registration form Start-->
               <div class="col-lg-12 well d-flex justify-content-center">
                 <div class="row">
+                  <!--FORM  init -->
                   <form>
                     <div class="col-sm-12">
                       <div class="row">
@@ -254,21 +255,24 @@
                             class="form-control"
                           />
                         </div>
-                        <div class="col-sm-4 form-group">
+                        <div class="col-sm-8 form-group">
                           <label>Carrera</label>
-                          <input
-                            type="text"
-                            placeholder="Carrera.."
-                            class="form-control"
-                          />
-                        </div>
-                        <div class="col-sm-4 form-group">
-                          <label>Modalidad</label>
-                          <input
-                            type="text"
-                            placeholder="Modalidad.."
-                            class="form-control"
-                          />
+                          <div class="dropdown">
+                            <button class="btn btn-success dropdown-toggle w-100" type="button" id="dropdownMenuButtonCarrera" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Seleccionar Carrera
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonCarrera">
+                              <li class="dropdown-item" role="button" onclick="updateButtonCarrera(this.innerText)">Ingeniería en Desarrollo de Software</li>
+                              <li class="dropdown-item" role="button" onclick="updateButtonCarrera(this.innerText)">Ingeniería Industrial</li>
+                              <li class="dropdown-item" role="button" onclick="updateButtonCarrera(this.innerText)">Ingeniería Multimedia</li>                              
+                              <li class="dropdown-item" role="button" onclick="updateButtonCarrera(this.innerText)">Licenciatura en Psicología</li>
+                              <li class="dropdown-item" role="button" onclick="updateButtonCarrera(this.innerText)">Licenciatura en Contaduría Pública</li>
+                              <li class="dropdown-item" role="button" onclick="updateButtonCarrera(this.innerText)">Licenciatura en Aduanas y Logística </li>
+                              <li class="dropdown-item" role="button" onclick="updateButtonCarrera(this.innerText)">Licenciatura en Administración de Empresas</li>
+                              <li class="dropdown-item" role="button" onclick="updateButtonCarrera(this.innerText)">Licenciatura en Derecho</li>
+                              <li class="dropdown-item" role="button" onclick="updateButtonCarrera(this.innerText)">Licenciatura en Negocios Internacionales</li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                       <div class="row">
@@ -280,18 +284,33 @@
                             class="form-control"
                           />
                         </div>
-                        <div class="col-sm-4 form-group">
+                        <div class="col-sm-8 form-group">
+                          <label>Modalidad</label>
+                          <div class="dropdown">
+                            <button class="btn btn-success dropdown-toggle w-100" type="button" id="dropdownMenuButtonModalidad" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Seleccionar Modalidad
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonModalidad">
+                              <li class="dropdown-item" role="button" onclick="updateButtonModalidad(this.innerText)">Escolarizada</li>
+                              <li class="dropdown-item" role="button" onclick="updateButtonModalidad(this.innerText)">Semipresencial</li>
+                              <li class="dropdown-item" role="button" onclick="updateButtonModalidad(this.innerText)">Ejecutiva</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6 form-group">
                           <label>Correo Institucional</label>
                           <input
-                            type="text"
+                            type="email"
                             placeholder="Correo Institucional.."
                             class="form-control"
                           />
                         </div>
-                        <div class="col-sm-4 form-group">
+                        <div class="col-sm-6 form-group">
                           <label>Correo Personal</label>
                           <input
-                            type="text"
+                            type="email"
                             placeholder="Correo Personal.."
                             class="form-control"
                           />
@@ -353,7 +372,6 @@
       <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
-
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
@@ -388,5 +406,14 @@
     <script src="dist/js/script.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="dist/js/pages/dashboard.js"></script>
+    <!-- Actualizar dropdown carrera cuando se seleccione una -->
+    <script>
+      function updateButtonCarrera(option) {
+        document.getElementById('dropdownMenuButtonCarrera').innerText = option;
+      }
+      function updateButtonModalidad(option) {
+        document.getElementById('dropdownMenuButtonModalidad').innerText = option;
+      }
+    </script>
   </body>
 </html>
